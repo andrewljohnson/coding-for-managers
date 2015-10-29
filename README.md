@@ -6,5 +6,5 @@ You can [read it online](http://andrewljohnson.github.io/coding-for-managers/).
 
 ## License
 
-This book is MIT-licensed (license.MD included with repo).
+This book is MIT-licensed (see LICENSE file included with repo for full text).
 

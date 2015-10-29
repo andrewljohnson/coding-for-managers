@@ -4,11 +4,7 @@ This book is a curriculum for learning to code, aimed at managers, entrepreneurs
 ## Read Online
 You can [read it online](http://andrewljohnson.github.io/coding-for-managers/).
 
-## Download the Code/Text
-
-The book lives in the [gh-pages branch](https://github.com/andrewljohnson/coding-for-managers/tree/gh-pages) of this repo.
-
 ## License
 
-This book is MIT-licensed. License included on the [gh-pages branch](https://github.com/andrewljohnson/coding-for-managers/tree/gh-pages).
+This book is MIT-licensed (license.MD included with repo).
 

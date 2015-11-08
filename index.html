@@ -1,81 +1,60 @@
+---
+title: Coding for Managers
+---
+
+<!DOCTYPE html>
+
 <html>
-  
+
   <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Coding for Managers Book" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
     <title>Coding for Managers</title>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-1038522-18', 'auto');
-    ga('send', 'pageview');
-    </script>
   </head>
-  
+
   <body>
-    <h1>Coding for Managers - Introduction</h1>
-    This manual assumes you don't know anything about computer programming. 
 
-    It provides an introduction for someone who quickly wants to learn to write code and build websites, apps, and other programs. You might be a manager, entrepreneur, or aspiring to be a professional programmer.
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+        <h1 id="project_title">Coding for Managers</h1>
+        <h2 id="project_tagline">Learn to Write, Schedule, and Manage Software</h2>
+      </header>
+    </div>
 
-    <b>Please note you should use a Mac for this book.</b> Many of the resources use a Mac, and things will be a little off for Windows and trip up a beginner.
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {% assign sortedcats = site.categories | sort %}
+        {% for category in sortedcats %}
+          <h1 style="text-transform:capitalize;">
+            {% assign title = category.first | split:'. ' %}
+            {{title[1]}}
+          </h1>
+          <ul style="list-style-type:none;padding-left:0">
+           {% assign sortedArticles = category.last | sort: 'order' %}
+            {% for post in sortedArticles %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </section>
+    </div>
 
-    <h1>Chapters</h1>
-    <ol>
-      <li><a href=./why-to-learn.html>Why Learn to Code</a></li>
-      <li><a href=./learn-with-a-friend.html>Learn with a Friend (or Mentor)</a></li>
-      <li><a href=./basic-web-programming.html>Start with Basic Web Programming (HTML, CSS and JavaScript)</a></li>
-      <li><a href=./command-line.html>Learn the Command Line</a></li>
-      <li><a href=./text-editors.html>Text Editors</a></li>
-      <li><a href=./github-pages.html>Use GitHub Pages for the Simplest Website</a></li>
-      <li><a href=./add-another-page.html>Add Another Page to Your Website</a></li>
-      <li><a href=./add-fancier-page.html>Add a Fancier Page to Your Website</a></li>
-      <li><a href=./jquery.html>JQuery - Going Deeper</a></li>
-    </ol>
-    <h1>Incomplete Chapters</h1>
-    <ol>
-      <li>More on Github
-        <ul>
-          <li><a href="./using-github.html">Using GitHub.com (Git and Version Control)</a></li>
-          <li><a href="./dont-break-the-chain.html">Start Checking In - Don't Break the Chain</a></li>
-        </ul>
-      </li>
-      <li>Going FullStack - Understand How to Build Back-ends 
-        <ul>
-          <li>node.js - so you want a back-end?</li>
-          <li>Other Back-ends - Python, Ruby, Go, Java/Erlang/Etc</li>
-        </ul>
-      </li>
-      <li><a href=./websites-without-code.html>Websites Without Coding</a></li>
-      <li><a href=./code-in-all-languages.html>Learn to Code in All Languages</a></li>
-      <li><a href=./resources.html>Resources</a></li>
-      <li>More Topics
-        <ul>
-      <li>Debugging 
-        <ul>
-          <li>Read error output and logs</li>
-          <li>Google search for error messages</li>
-          <li>Using Stackoverflow</li>
-        </ul>
-      </li>
-          <li>Databases</li>
-          <li>Using APIs</li>
-          <li>Crawling Websites and Scraping Data</li>
-          <li>Hot Keys</li>
-          <li>Typing</li>
-          <li>Bash Aliases</li>
-          <li>ZSH</li>
-          <li>Importance of Github</li>
-          <li>Platform Survey: AWS, Heroku, AppEngine, Parse, Firebase, Rackspace, Bare Metal</li>
-        </ul>
-      </li>
-    </ol>
-    <h2>Notes</h2>
-    <ul>
-      <li>Codeacademy.com time estimate for intro courses seems way high - some people can do 11 hours estimate in 1 hour.
-      <li>having any amount of previous programming experience (as a kid, high school, making websites) really helps people blst through book</li>
-      <li>command line and Github way trickier for people overall than coding tutorials</li>
-    </ul>
+    <!-- FOOTER  -->
+     <div id="footer_wrap" class="outer">
+      <header class="inner">
+        <p>
+          by <a href="http://andrewljohnson.com">Andrew L. Johnson
+        </p>
+      </header>
+    </div>
+
   </body>
 </html>

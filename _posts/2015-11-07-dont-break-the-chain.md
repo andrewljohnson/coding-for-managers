@@ -1,7 +1,8 @@
 ---
 layout: chapter
 title: Don't Break the Chain
-category: 4. Unfinished
+category: 3. Code Many Projects
+order: 4
 ---
 
 # Don't Break the Chain

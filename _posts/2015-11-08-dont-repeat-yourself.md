@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Don't Repeat Yourself (Write Scripts)
-category: 4. Unfinished
+category: 5. Unfinished
 ---
 
 # Don't Repeat Yourself (Write Scripts)

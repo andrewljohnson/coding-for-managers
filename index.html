@@ -6,23 +6,33 @@ title: Coding for Managers
 
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Coding for Managers Book" />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="Coding for Managers Book" />
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <title>Coding for Managers</title>
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body>
 
-    <title>Coding for Managers</title>
-  </head>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <h1 id="project_title">Coding for Managers  
 
-  <body>
+        <iframe src="https://ghbtns.com/github-btn.html?user=andrewljohnson&repo=coding-for-managers&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px" style="position:relative;top:3px"></iframe>
+      </h1>
+        
+      <h2 id="project_tagline">Learn to Write Software and Understand Development</h2>
+        
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="gaiagps" >Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-        <h1 id="project_title">Coding for Managers</h1>
-        <h2 id="project_tagline">Learn to Write, Schedule, and Manage Software</h2>
+      <div class="fb-share-button" data-href="http://codingformanagers.com" data-layout="button_count" style="margin-left:10px;position:relative;top:-8px"></div>
+
+      <iframe src="https://ghbtns.com/github-btn.html?user=andrewljohnson&type=follow&count=true&size=small&branch=gh-pages" frameborder="0" scrolling="0" width="280px" height="21px" style="margin-left:10px"></iframe>
+
       </header>
     </div>
 
@@ -31,30 +41,38 @@ title: Coding for Managers
       <section id="main_content" class="inner">
         {% assign sortedcats = site.categories | sort %}
         {% for category in sortedcats %}
-          <h1 style="text-transform:capitalize;">
-            {% assign title = category.first | split:'. ' %}
-            {{title[1]}}
-          </h1>
-          <ul style="list-style-type:none;padding-left:0">
-           {% assign sortedArticles = category.last | sort: 'order' %}
-            {% for post in sortedArticles %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
+        <h1 style="text-transform:capitalize;">
+          {% assign title = category.first | split:'. ' %}
+          {{title[1]}}
+        </h1>
+        <ul style="list-style-type:none;padding-left:0">
+         {% assign sortedArticles = category.last | sort: 'order' %}
+         {% for post in sortedArticles %}
+         <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endfor %}
-      </section>
-    </div>
+      </ul>
+      {% endfor %}
+    </section>
+  </div>
 
-    <!-- FOOTER  -->
-     <div id="footer_wrap" class="outer">
-      <header class="inner">
-        <p>
-          by <a href="http://andrewljohnson.com">Andrew L. Johnson
-        </p>
-      </header>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <header class="inner">
+      <p>
+        by <a href="http://andrewljohnson.com">Andrew L. Johnson
+      </p>
+    </header>
+  </div>
 
-  </body>
+</body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=546499432064200";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </html>

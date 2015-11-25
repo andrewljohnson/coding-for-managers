@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: Learn Git
-order: 1
-category: 3. Code Many Projects
+order: 3
+category: 2. Publish Code
 ---
 
 # Learn Git

@@ -1,6 +1,6 @@
 /*
   In this exercise, you write the logic behind a TicTacToe game.
-  The interface (fucntion names) have been defined, you fill in the code.
+  The interface (function names) have been defined, you fill in the code.
 */
 
 function TicTacToe() {
@@ -13,12 +13,13 @@ function TicTacToe() {
 }
 
 // updates this.board with the given move
+// move is a hash with three propertoes: x, y, and player
+// example move in top left corner: {x:0, y:0, player:'X'}
 TicTacToe.prototype.playMove = function(move) {
   // write this function to add a move to this.board
 }
 
 // returns True if a move is legal, False if not
-// example move in top left corner: {x:0, y:0, player:'X'}
 TicTacToe.prototype.moveIsLegal = function(move) {
   // write this function
   // hint: move.x and move.y should be between 0 and 2, and space should be unblocked  	

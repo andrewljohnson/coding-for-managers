@@ -1,6 +1,7 @@
 /*
   In this exercise, you write the logic behind a TicTacToe game.
   The interface (function names) have been defined, you fill in the code.
+  DO IT LIVE, hit Run to see if your code works: https://jsfiddle.net/22eh7aLy/
 */
 
 function TicTacToe() {
@@ -71,8 +72,10 @@ TicTacToe.prototype.playTestXWinsGame = function() {
 	}
 }
 
-
 // play a test game where O wins
 TicTacToe.prototype.playTestOWinsGame = function() {
   // make a method similar to playTestXWinsGame() above
 }
+
+var game = new TicTacToe();
+game.playTestXWinsGame();

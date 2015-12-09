@@ -13,7 +13,7 @@ function TicTacToe() {
 }
 
 // updates this.board with the given move
-// move is a hash with three propertoes: x, y, and player
+// move is a hash with three properties: x, y, and player
 // example move in top left corner: {x:0, y:0, player:'X'}
 TicTacToe.prototype.playMove = function(move) {
   // write this function to add a move to this.board
@@ -22,12 +22,12 @@ TicTacToe.prototype.playMove = function(move) {
 // returns True if a move is legal, False if not
 TicTacToe.prototype.moveIsLegal = function(move) {
   // write this function
-  // hint: move.x and move.y should be between 0 and 2, and space should be unblocked  	
+  // hint: move.x and move.y should be between 0 and 2, and the space should be unblocked  	
 }
 
-// returns True if the game is over, false if the game is still ongoing
+// returns True if the game is over, False if the game is still ongoing
 TicTacToe.prototype.isGameOver = function() {  	
-  // write this function to detect if the ame is over
+  // write this function to detect if the game is over
 }
 
 
@@ -46,6 +46,15 @@ TicTacToe.prototype.print = function(move) {
 
 // play a test game where X wins
 TicTacToe.prototype.playTestXWinsGame = function() {
+
+    // if you did the previous functions correctly, 
+	// this function should play 5 moves and print 5 things:
+	//      Game in Progress
+	//      Game in Progress
+	//      Game in Progress
+	//      Game in Progress
+	//      'X wins'
+
 	// some sample move data where X wins
 	var moves = [
 	              {x:0, y:0, player:'X'},
@@ -54,22 +63,16 @@ TicTacToe.prototype.playTestXWinsGame = function() {
 	              {x:2, y:0, player:'O'},
 	              {x:0, y:2, player:'X'}
 	            ];
+
+    // play out the list of moves    
 	for (var i=0;i<moves.length;i++) {
-	  this.playMove(move);	  // plays the move
-	  this.printGameState();  // print the state after each move
+	  this.playMove(moves[i]); // plays the move
+	  this.printGameState();   // print the state after each move
 	}
-	// if you did it right, 
-	// this method should play 5 moves
-	// and print 5 things:
-	//            Game in Progress
-	//            Game in Progress
-	//            Game in Progress
-	//            Game in Progress
-	//            'X wins'
 }
 
 
 // play a test game where O wins
-TicTacToe.prototype.playTestXWinsGame = function() {
+TicTacToe.prototype.playTestOWinsGame = function() {
   // make a method similar to playTestXWinsGame() above
 }

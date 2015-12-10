@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Update Your Website
-order: 2
+order: 1
 category: 3. Code Many Projects
 ---
 

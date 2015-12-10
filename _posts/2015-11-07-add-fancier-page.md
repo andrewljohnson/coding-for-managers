@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Update Your Website in a Cooler Way
-order: 3
+order: 2
 category: 3. Code Many Projects
 ---
 

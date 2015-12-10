@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Use GitHub Pages for the Simplest Website
-order: 3
+order: 4
 category: 2. Publish Code
 ---
 

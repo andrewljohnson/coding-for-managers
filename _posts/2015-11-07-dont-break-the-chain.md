@@ -2,7 +2,7 @@
 layout: chapter
 title: Don't Break the Chain
 category: 3. Code Many Projects
-order: 4
+order: 3
 ---
 
 # Don't Break the Chain

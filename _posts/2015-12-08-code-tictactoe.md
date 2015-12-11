@@ -2,7 +2,7 @@
 layout: chapter
 title: Code TicTacToe
 category: 3. Code Many Projects
-order: 5
+order: 3
 ---
 
 # No UI, Just Logic

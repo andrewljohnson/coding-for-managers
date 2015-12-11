@@ -2,7 +2,7 @@
 layout: chapter
 title: Make Objects in JavaScript
 category: 3. Code Many Projects
-order: 4
+order: 2
 ---
 
 # Object Oriented Programming

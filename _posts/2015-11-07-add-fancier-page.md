@@ -2,7 +2,7 @@
 layout: chapter
 title: Update Your Website in a Cooler Way
 order: 2
-category: 3. Code Many Projects
+category: 5. Unfinished
 ---
 
 # Update Your Website in a Cooler Way

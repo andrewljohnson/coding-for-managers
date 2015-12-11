@@ -2,7 +2,7 @@
 layout: chapter
 title: Update Your Website
 order: 1
-category: 3. Code Many Projects
+category: 5. Unfinished
 ---
 
 # Update Your Website
